@@ -15,7 +15,7 @@ mv /v2ray/geosite.dat .
 #mv /v2ray/config.json .
 
 touch config.json
-chmod + config.json
+chmod +777 config.json
 echo -e "$CONFIG_JSON" > config.json
 
 chmod +x v2ray v2ctl
