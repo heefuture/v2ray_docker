@@ -8,15 +8,9 @@ unzip v2ray.zip
 #mv /v2ray/v2ray-v$VER-linux-64/geoip.dat .
 #mv /v2ray/v2ray-v$VER-linux-64/geosite.dat .
 
-#mv /v2ray/v2ray .
-#mv /v2ray/v2ctl .
-#mv /v2ray/geoip.dat .
-#mv /v2ray/geosite.dat .
-#mv /v2ray/config.json .
-
 #touch config.json
-#chmod +777 config.json
-echo -e "$CONFIG_JSON" > /v2ray/config.json
+chmod +777 ./config.json
+echo -e "$CONFIG_JSON" > ./config.json
 
-chmod +x /v2ray/v2ray /v2ray/v2ctl
+chmod +x ./v2ray ./v2ctl
 ./v2ray
