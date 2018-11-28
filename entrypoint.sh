@@ -12,8 +12,11 @@ mv /v2ray/v2ray .
 mv /v2ray/v2ctl .
 mv /v2ray/geoip.dat .
 mv /v2ray/geosite.dat .
-mv /v2ray/config.json .
+#mv /v2ray/config.json .
+
+touch config.json
+chmod + config.json
+echo -e "$CONFIG_JSON" > config.json
 
 chmod +x v2ray v2ctl
-echo -e "$CONFIG_JSON" > config.json
 ./v2ray
